@@ -3,8 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hongye Sun - Teaching Experience</title>
+    <title>Hongye Sun - Teaching</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9MWX5CD0FP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-9MWX5CD0FP');
+    </script>
+    
     <link rel="stylesheet" href="style.css">
+    <style>
+        main {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+        section {
+            margin-bottom: 45px;
+        }
+        section h2 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            color: #0055aa;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+        .teaching-item {
+            margin-bottom: 18px;
+            line-height: 1.6;
+        }
+        .teaching-title {
+            font-size: 17px;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        .teaching-details {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+            margin-left: 0;
+        }
+        .teaching-description {
+            font-size: 14px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.5;
+        }
+        header h1 {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px 30px;
+        }
+        header nav ul {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -12,29 +71,76 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="education.html">Education</a></li>
                 <li><a href="research.html">Research</a></li>
-                <li><a href="teaching.html">Teaching Experience</a></li>
-                <li><a href="additional-info.html">Additional Information</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="spotlight.html">Spotlight</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
             <h2>Teaching Experience</h2>
-            <ul>
-                <li>(expected) Lecturer to Principles of Marketing, University of Utah (Spring 2025)</li>
-                <li>Lab Manager, University of Utah (Spring 2022, Fall 2024)</li>
-                <li>Teaching Assistant to Principles of Marketing, University of Utah (Fall 2024)</li>
-                <li>Teaching Assistant to Marketing Analysis, University of Utah (Fall 2023)</li>
-                <li>Teaching Assistant to Marketing Research, University of Utah (Spring 2022, 2023)</li>
-                <li>Teaching Assistant to IS & MKT Intro, Nanjing University (Mar.2018 – Jun.2019)</li>
-            </ul>
+            
+            <div class="teaching-item">
+                <div class="teaching-title">Instructor, Principles of Marketing</div>
+                <div class="teaching-details">University of Utah, Spring 2025</div>
+                <div class="teaching-description">Independently teaching 45 undergraduate students. Redesigned curriculum integrating real-world case studies and data-driven learning modules.</div>
+            </div>
+
+            <div class="teaching-item">
+                <div class="teaching-title">Teaching Assistant, Principles of Marketing</div>
+                <div class="teaching-details">University of Utah, Fall 2024</div>
+                <div class="teaching-description">Led discussion sections for 30 students and graded assignments for a class of 120 students.</div>
+            </div>
+
+            <div class="teaching-item">
+                <div class="teaching-title">Teaching Assistant, Marketing Analysis</div>
+                <div class="teaching-details">University of Utah, Fall 2023</div>
+                <div class="teaching-description">Conducted lab sessions on statistical analysis using R and STATA for marketing applications.</div>
+            </div>
+
+            <div class="teaching-item">
+                <div class="teaching-title">Teaching Assistant, Marketing Research</div>
+                <div class="teaching-details">University of Utah, Spring 2022 & Spring 2023</div>
+                <div class="teaching-description">Mentored student research projects, taught survey design and experimental methods.</div>
+            </div>
+
+            <div class="teaching-item">
+                <div class="teaching-title">Teaching Assistant, IS & Marketing Introduction</div>
+                <div class="teaching-details">Nanjing University, Fall 2018 & Fall 2019</div>
+                <div class="teaching-description">Supported diverse learning needs and graded assignments for classes of 80+ students.</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Service & Leadership</h2>
+            
+            <div class="teaching-item">
+                <div class="teaching-title">Reviewer</div>
+                <div class="teaching-details">AMA Winter Conference, 2025</div>
+                <div class="teaching-description">Reviewed manuscript submissions in quantitative marketing and strategy tracks, focusing on machine learning and causal inference applications.</div>
+            </div>
+
+            <div class="teaching-item">
+                <div class="teaching-title">Marketing Lab Manager</div>
+                <div class="teaching-details">University of Utah, Spring 2022 & Fall 2024</div>
+                <div class="teaching-description">Managed lab operations serving 700+ students annually, coordinated between faculty and students, facilitated 30+ experimental sessions and research projects.</div>
+            </div>
+
+            <div class="teaching-item">
+                <div class="teaching-title">Curriculum Consultant</div>
+                <div class="teaching-details">Jilin University, 2024</div>
+                <div class="teaching-description">Advised on integrating machine learning modules into undergraduate marketing curriculum, facilitated collaboration with Computer Science department to enhance program appeal and enrollment.</div>
+            </div>
+
+            <div class="teaching-item">
+                <div class="teaching-title">Organizer, Quantitative Marketing Reading Group</div>
+                <div class="teaching-details">Nanjing University, 2019-2020</div>
+                <div class="teaching-description">Founded and led weekly seminars discussing cutting-edge research in marketing analytics and strategic decision-making.</div>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Hongye Sun. All rights reserved.</p>
         <p>Contact: <a href="mailto:hongye.sun@Eccles.utah.edu">hongye.sun@Eccles.utah.edu</a></p>
     </footer>
 </body>

@@ -4,7 +4,190 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hongye Sun - Home</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9MWX5CD0FP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-9MWX5CD0FP');
+    </script>
+    
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        /* 基础 style.css 样式 */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        /* 其他页面的覆盖样式 */
+        header h1 {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px 30px;
+            font-size: 28px;
+            color: #fff;
+            font-weight: 600;  /* 加粗 */
+        }
+        header nav ul {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 0 30px;
+            list-style-type: none;
+            text-align: center;
+        }
+        header nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;  /* 从16px改为15px */
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        header nav ul li a:hover {
+            background-color: #555;
+        }
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 30px;
+        }
+        .profile-container {
+            display: flex;
+            gap: 50px;
+            align-items: flex-start;
+        }
+        .profile-left {
+            flex-shrink: 0;
+        }
+        .profile-picture {
+            width: 300px;
+            height: auto;
+            border-radius: 4px;
+        }
+        .profile-right {
+            flex: 1;
+            max-width: 750px;
+        }
+        .welcome-text {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #444;
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+        .research-pipeline {
+            margin: 12px 0;
+        }
+        .research-pipeline-title {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 600;
+        }
+        .research-pipeline ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .research-pipeline li {
+            margin-bottom: 6px;
+            font-size: 15px;
+            color: #444;
+            padding-left: 20px;
+            position: relative;
+            line-height: 1.5;
+        }
+        .research-pipeline li:before {
+            content: "•";
+            position: absolute;
+            left: 5px;
+            color: #0055aa;
+            font-weight: bold;
+        }
+        .content-text {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #444;
+            text-align: justify;
+            margin-bottom: 12px;
+        }
+        .cv-link {
+            color: #0055aa;
+            text-decoration: underline;
+            font-size: 16px;
+            display: inline-block;
+            margin-top: 20px;
+            margin-bottom: 18px;
+        }
+        .cv-link:hover {
+            text-decoration: none;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #0055aa;
+            margin: 18px 0 10px 0;
+        }
+        .research-interests {
+            margin-bottom: 18px;
+        }
+        .research-item {
+            margin-bottom: 5px;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        .research-item strong {
+            color: #333;
+        }
+        .contact-section {
+            margin-top: 18px;
+        }
+        .contact-section p {
+            margin: 2px 0;
+            font-size: 14px;
+            color: #555;
+            line-height: 1.4;
+        }
+        .contact-section a {
+            color: #0055aa;
+            text-decoration: none;
+        }
+        .contact-section a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+        footer p {
+            margin: 0;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+        footer a:hover {
+            color: #ddd;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -12,29 +195,68 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="education.html">Education</a></li>
                 <li><a href="research.html">Research</a></li>
-                <li><a href="teaching.html">Teaching Experience</a></li>
-                <li><a href="additional-info.html">Additional Information</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="spotlight.html">Spotlight</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="homepage">
-            <img src="images/profile-picture.jpg" alt="Hongye Sun" class="homepage-profile-picture">
-            <div class="homepage-intro">
-                <h2>About Me</h2>
-                <p>I am currently a Ph.D. candidate in Marketing at the University of Utah, expected to graduate in 2026. My research spans causal inference, lab and field experiments, machine learning marketing, and computational market intelligence through LLMs.</p>
-                <p>My research agenda benefits from strategic industry partnerships. I collaborate with a major organization of over 500 sales agents to study salesforce effectiveness and organizational strategy. In retail, I work with a large chain retailer to investigate consumer behavior through comprehensive shopping data. These empirical investigations extend to collaborations with automotive manufacturers, creative design firms, STEM training centers, and healthcare providers, enabling rigorous examination of marketing phenomena across diverse business contexts.</p>
+        <div class="profile-container">
+            <div class="profile-left">
+                <img src="images/profile-picture.jpg" alt="Hongye Sun" class="profile-picture">
             </div>
-        </section>
+            
+            <div class="profile-right">
+                <div class="welcome-text">
+                    Welcome! I am a Ph.D. candidate in Marketing at the University of Utah, expected to graduate in 2026. I am passionate about integrating marketing theory and technological innovations into real business practice to make the business world better.
+                </div>
+                
+                <div class="research-pipeline">
+                    <p class="research-pipeline-title">My research pipeline includes three streams:</p>
+                    <ul>
+                        <li><strong>Social ties and tech adoption in salesforce</strong> (e.g., informal networks, AI integration)</li>
+                        <li><strong>Marketing decision-making in healthcare</strong> (e.g., visual biases, aesthetic paying)</li>
+                        <li><strong>Machine learning applications in marketing</strong> (e.g., video analytics, generative AI)</li>
+                    </ul>
+                </div>
+                
+                <div class="content-text">
+                    Most of my current projects involve collaborations with leading industry partners across healthcare, high-tech, retail, and education sectors. Through my dean-level advisors from top business schools in North and South China, along with personal connections, I have established partnerships with eight companies. I primarily use field experiments, causal inference, and machine learning, complemented by lab and survey methods.
+                </div>
+                
+                <div class="content-text">
+                    My job market paper studies how informal ties impact sales agent turnover. Using random dormitory assignment data from around 2,000 sales agents, I find that agents with dormmates from the same hometown or alma mater stay with the company longer. The paper reveals both the contagion cost and psychological support mechanism behind this retention benefit.
+                </div>
+                
+                <a href="https://drive.google.com/file/d/1tlvmsYG3wjbIGGAQzsaxwk54BdqwGfcA/view" target="_blank" class="cv-link">Curriculum Vitae (PDF)</a>
+                
+                <div class="research-interests">
+                    <h3 class="section-title">Research Interests</h3>
+                    <div class="research-item">
+                        <strong>Substantive:</strong> Salesforce, Healthcare, Tech Application
+                    </div>
+                    <div class="research-item">
+                        <strong>Methodological:</strong> Causal Inference, Field Experiments, Machine Learning
+                    </div>
+                </div>
+                
+                <div class="contact-section">
+                    <h3 class="section-title">Contact</h3>
+                    <p>David Eccles School of Business</p>
+                    <p>Department of Marketing</p>
+                    <p>University of Utah</p>
+                    <p>1655 East Campus Center Drive SFEBB</p>
+                    <p>Salt Lake City, UT 84112</p>
+                    <p>Email: <a href="mailto:hongye.sun@eccles.utah.edu">hongye.sun@eccles.utah.edu</a></p>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
-        <p>© 2024 Hongye Sun. All rights reserved.</p>
-        <p>Contact: <a href="mailto:hongye.sun@Eccles.utah.edu">hongye.sun@Eccles.utah.edu</a></p>
+        <p>Contact: <a href="mailto:hongye.sun@eccles.utah.edu">hongye.sun@eccles.utah.edu</a></p>
     </footer>
 </body>
 </html>
